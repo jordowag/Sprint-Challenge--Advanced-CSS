@@ -14,6 +14,10 @@
     img {
       .image-border(@border-radius*0.5);
     }
+    .neil {
+      width:20%;
+      padding: 15px;
+    }
   }
 
   .space-images {
@@ -108,6 +112,31 @@
       padding:0;
       margin-top:10%;
       margin-bottom:5%;
+    }
+  }
+  .about-main {
+    padding:15px;
+    h2 {
+      margin-bottom:5%;
+    }
+    img {
+      width:80%;
+      margin-bottom:5%;
+    }
+  }
+  .contact {
+    padding:50px;
+    form {
+      background-color:pink;
+      padding: 5% 10%;
+      border-radius:(@border-radius*4);
+      input[name="zip-code"] {
+        width:10%;
+      }
+    }
+    .btn {
+      .button-style(@btn-bg-color,@wild-sand);
+      margin-top:5%;
     }
   }
 }//home

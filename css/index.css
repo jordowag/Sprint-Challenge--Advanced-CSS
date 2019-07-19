@@ -216,6 +216,10 @@ footer {
 .home .intro img {
   border-radius: 5px;
 }
+.home .intro .neil {
+  width: 20%;
+  padding: 15px;
+}
 .home .space-images {
   display: flex;
   justify-content: default;
@@ -328,4 +332,35 @@ footer {
     margin-top: 10%;
     margin-bottom: 5%;
   }
+}
+.home .about-main {
+  padding: 15px;
+}
+.home .about-main h2 {
+  margin-bottom: 5%;
+}
+.home .about-main img {
+  width: 80%;
+  margin-bottom: 5%;
+}
+.home .contact {
+  padding: 50px;
+}
+.home .contact form {
+  background-color: pink;
+  padding: 5% 10%;
+  border-radius: 40px;
+}
+.home .contact form input[name="zip-code"] {
+  width: 10%;
+}
+.home .contact .btn {
+  background-color: #22283A;
+  color: #F6F6F6;
+  width: 30%;
+  text-align: center;
+  padding: 3% 0;
+  font-size: 2rem;
+  border-radius: 5px;
+  margin-top: 5%;
 }
