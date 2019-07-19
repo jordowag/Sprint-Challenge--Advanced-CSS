@@ -8,12 +8,19 @@ nav {
     h1 {
         font-size:4.5rem;
         padding: 1% 2% 2% 2%;
+        @media @phone {
+            margin:2% 0;
+        }
     }
 
     #links {
         width:50%;
         .flex(space-evenly,default);
         margin:0% auto 1% auto;
+        @media @phone {
+            width:100%;
+
+        }
     }
 
     a {

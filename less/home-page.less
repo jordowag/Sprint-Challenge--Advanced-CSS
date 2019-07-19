@@ -19,12 +19,22 @@
   .space-images {
     .flex(default,wrap);
     width: 100%;
-
     img {
       width: 28%;
       margin: 20px 2.5%;
       .image-border(@border-radius*2);
       height: 100%;
+    }
+    @media @phone {
+      .sky {
+        display:none;
+      }
+      .launch {
+        display:none;
+      }
+      .blast {
+        width:100%;
+      }
     }
   }
 
@@ -61,18 +71,43 @@
         .button-style(@btn-bg-color,@wild-sand);
         &:hover {
           .button-style(blue,red);
+          @media @phone {
+            width: 95%;
+            padding: 5% 0;
+          }
         }
+        @media @phone {
+          width:92%;
+          padding: 5% 0;
+        }
+      }
+      @media @phone {
+        width: 100%;
+        margin-left:4%;
+        margin-top:4%;
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone {
+        width:95%;
+        padding-right: 4%;
+      }
       img {
         width: 100%;
         height: auto;
+        @media @phone {
+          .image-border(@border-radius);
+        }
       }
     }
+    @media @phone {
+      flex-direction:column-reverse;
+      padding:0;
+      margin-top:10%;
+      margin-bottom:5%;
+    }
   }
-}// home
+}//home
