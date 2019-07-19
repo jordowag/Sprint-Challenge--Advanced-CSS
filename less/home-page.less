@@ -1,9 +1,8 @@
 // Home Content
 
 .home {
-
   .intro {
-
+    padding-top:20%;
     h2 {
       padding: 15px;
     }
@@ -11,19 +10,35 @@
     p {
       padding:0 15px;
     }
-  
+
+    img {
+      .image-border(@border-radius*0.5);
+    }
+    .neil {
+      width:20%;
+      padding: 15px;
+    }
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
+    .flex(default,wrap);
     width: 100%;
-
     img {
       width: 28%;
       margin: 20px 2.5%;
-      border-radius: 20px;
+      .image-border(@border-radius*2);
       height: 100%;
+    }
+    @media @phone {
+      .sky {
+        display:none;
+      }
+      .launch {
+        display:none;
+      }
+      .blast {
+        width:100%;
+      }
     }
   }
 
@@ -43,8 +58,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex(center,default);
 
     .walk-text {
       width: 50%;
@@ -58,18 +72,71 @@
       }
 
       .btn {
+        .button-style(@btn-bg-color,@wild-sand);
+        &:hover {
+          .button-style(blue,red);
+          @media @phone {
+            width: 95%;
+            padding: 5% 0;
+          }
+        }
+        @media @phone {
+          width:92%;
+          padding: 5% 0;
+        }
+      }
+      @media @phone {
+        width: 100%;
+        margin-left:4%;
+        margin-top:4%;
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone {
+        width:95%;
+        padding-right: 4%;
+      }
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        @media @phone {
+          .image-border(@border-radius);
+        }
       }
     }
+    @media @phone {
+      flex-direction:column-reverse;
+      padding:0;
+      margin-top:10%;
+      margin-bottom:5%;
+    }
   }
-}// home
+  .about-main {
+    padding:15px;
+    h2 {
+      margin-bottom:5%;
+    }
+    img {
+      width:80%;
+      margin-bottom:5%;
+    }
+  }
+  .contact {
+    padding:50px;
+    form {
+      background-color:pink;
+      padding: 5% 10%;
+      border-radius:(@border-radius*4);
+      input[name="zip-code"] {
+        width:10%;
+      }
+    }
+    .btn {
+      .button-style(@btn-bg-color,@wild-sand);
+      margin-top:5%;
+    }
+  }
+}//home

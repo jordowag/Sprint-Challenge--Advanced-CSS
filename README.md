@@ -32,15 +32,16 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. What is the difference between an adaptive website and a fully responsive website?
-
-2. Describe what it means to be mobile first vs desktop first.
-
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
-
-4. How would you describe preprocessing to someone new to CSS?
-
-5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+1. What is the difference between an adaptive website and a fully responsive website?  
+    An adaptive website has different layouts for specific breakpoints, while a fully responsive website is more fluid and the elements are always changings size at all different screen sizes.  
+2. Describe what it means to be mobile first vs desktop first.  
+    Mobile first is designing the website layout, starting with the mobile layout first then working your way up towards larger screens. This would require media queries using 'min-width'. Desktop first would be designing the website first for a desktop screen, then working your way towards smaller screens. In CSS, you would use media queries with 'max-width'.  
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?  
+    Converts the default font size to 10 px, so it's easier to calculate in rems. For example, if you did 1.4 rem, that would be equivalent to 14 px. If font size was 100%, the font size would be 16px.  
+4. How would you describe preprocessing to someone new to CSS?  
+    Preprocessing is a way to code CSS very similar to HTML, with nested elements and other things like functions and global variables. It makes it easier to keep track of design changes in CSS.  
+5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?  
+    Mixins are my favorite concept. But they also give me the most trouble because I have to plan ahead on which elements would share the same style and make a common mixin. I also have trouble with making animations with a mixin.  
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
