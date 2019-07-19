@@ -247,7 +247,15 @@ footer {
   padding: 3% 0;
   font-size: 2rem;
   border-radius: 5px;
-  font-weight: 400;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: blue;
+  color: red;
+  width: 30%;
+  text-align: center;
+  padding: 3% 0;
+  font-size: 2rem;
+  border-radius: 5px;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -256,5 +264,4 @@ footer {
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
 }
