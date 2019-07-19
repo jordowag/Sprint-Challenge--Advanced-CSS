@@ -165,6 +165,8 @@ nav {
   background-color: #F6F6F6;
   text-align: center;
   border-bottom: 2px solid #F1F1F1;
+  position: fixed;
+  opacity: 0.6;
 }
 nav h1 {
   font-size: 4.5rem;
@@ -201,6 +203,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  padding-top: 20%;
 }
 .home .intro h2 {
   padding: 15px;
