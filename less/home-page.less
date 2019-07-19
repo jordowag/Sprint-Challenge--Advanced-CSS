@@ -1,7 +1,6 @@
 // Home Content
 
 .home {
-
   .intro {
 
     h2 {
@@ -11,18 +10,20 @@
     p {
       padding:0 15px;
     }
-  
+
+    img {
+      .image-border(@border-radius*0.5);
+    }
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
+    .flex(default,wrap);
     width: 100%;
 
     img {
       width: 28%;
       margin: 20px 2.5%;
-      border-radius: 20px;
+      .image-border(@border-radius*2);
       height: 100%;
     }
   }
@@ -43,8 +44,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex(center,default);
 
     .walk-text {
       width: 50%;
@@ -58,6 +58,7 @@
       }
 
       .btn {
+
       }
     }
 
@@ -68,7 +69,7 @@
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        .image-border(@border-radius);
       }
     }
   }

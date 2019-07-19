@@ -168,13 +168,14 @@ nav {
 }
 nav h1 {
   font-size: 4.5rem;
-  padding: 2%;
+  padding: 2% 2% 0 2%;
 }
 nav #links {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
-  margin: 1% auto;
+  flex-wrap: default;
+  margin: 0.5% auto 1% auto;
 }
 nav a {
   text-decoration: none;
@@ -197,8 +198,12 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+.home .intro img {
+  border-radius: 5px;
+}
 .home .space-images {
   display: flex;
+  justify-content: default;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -223,6 +228,7 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+  flex-wrap: default;
 }
 .home .walk .walk-text {
   width: 50%;

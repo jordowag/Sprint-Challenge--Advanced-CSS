@@ -4,19 +4,22 @@ nav {
     background-color: @nav-bg;
     text-align:center;
     border-bottom: 2px solid @nav-border;
+
     h1 {
         font-size:4.5rem;
-        padding: 2%;
+        padding: 2% 2% 0 2%;
     }
+
     #links {
         width:50%;
-        display:flex;
-        justify-content: space-evenly;
-        margin:1% auto;
+        .flex(space-evenly,default);
+        margin:0.5% auto 1% auto;
     }
+
     a {
         text-decoration:none;
         color:@nav-font;
         font-size:1.8rem;
     }
+
 }
